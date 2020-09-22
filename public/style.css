@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400,700&display=swap');
+:root {
+    --corPadrao-color:#7159c1;
+    --cor-h4:rgba(255, 68, 0, 0.712);
+}
+* {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+body {
+        font-family: 'Roboto', sans-serif;
+        background-color: rgb(46, 46, 46);
+        background-image: url("https://images.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blt54d5579252c664a5/5ee3e475e35f99710ac78ec3/79ERIMWIO8R71457037487361.jpg");
+       
+}
+header {
+    background-color:rgb(36, 21, 18);
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+h4 {
+    line-height:30px;
+    color: var(--cor-h4);
+}
+.links {
+    font-size: 22px;
+    
+}
+.links a + a {
+    margin-left: 32px;
+}
+.links a {
+    text-decoration:none;
+    
+    position: relative;
+    /*==GRADIENTE TXT==*/
+    background: -webkit-linear-gradient(rgb(129, 93, 30), rgb(195, 169, 80));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.links a:hover{
+    background: -webkit-linear-gradient(white, rgb(195, 169, 80)) ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+     filter: brightness(150%);
+     
+}
+/*==ESTILO SUBLINHADO ANIMADO PARA MENU==
+.links a.active {
+    font-weight: bold;
+    
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius:20%;
+    left: 0;
+    background-color: var(--cor-h4);
+    bottom: -4px;
+    position: absolute;
+}
+.links a:hover::after {
+    width: 100%;
+    transition: 200ms ease-in-out;
+}
+/=== EXEMPLO DE AFTER ===/
+.teste {
+       padding-top: 10px;
+       cursor: pointer;
+       color: white;
+       position: relative;
+       box-sizing: content-box;
+       width: 52px;
+       text-align: center;
+       margin: auto;
+
+}
+.teste::after {
+    content:"";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(1, 105, 153);
+    border-radius: 20%;
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    left:0;
+    box-sizing: border-box;
+    
+}
+.teste:hover::after{
+   width: 100%;
+   transition: 200ms ease-in-out ;
+  
+  
+}
+*/
+/*====CARD====*/
+.card {
+    width: 800px;
+    min-height: 400px;
+    background-color: white;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 3px 4px 12px 2px rgb(172, 163, 162);
+    animation-name: card_up;
+    opacity: 0;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-delay: 250ms;
+    
+    
+}
+/*==== animation ====*/
+.avatar {
+    background-image:url('https://vignette.wikia.nocookie.net/tsrd/images/d/d0/Cleric.jpg/revision/latest/scale-to-width-down/340?cb=20160630201227&path-prefix=pt-br') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    animation-name: avatar_up;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 500ms;
+    margin-top: 3rem;
+    /*animation-iteration-count: infinite;*/
+}
+
+
+
+/*===details===*/
+.details {
+    padding: 32px;
+    background-color: rgb(235, 222, 194);
+}
+.details .item {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.596);
+    animation-name: pop_info;
+    animation-duration: 500ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+}
+.details .item:last-child {
+    border-bottom: none;
+}
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.details .item:nth-child(4) span:nth-child(1){
+    padding: 2px 5px;
+    background-color: rgb(37, 141, 37);
+    border-radius: 25px;
+    color: wheat;
+    margin: 10px 10px;
+    display: inline-block;
+    font-size: 12px; 
+    text-transform: uppercase; 
+    font-weight: bold;
+} 
+.details .item:nth-child(4) span:nth-child(2){
+    padding: 2px 5px;
+    background-color: rgb(226, 35, 10);
+    border-radius: 25px;
+    display: inline-block;
+    color: wheat;
+    font-size: 12px;  
+    text-transform: uppercase; 
+    font-weight: bold;
+} 
+@keyframes pop_info {
+    from {
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes avatar_up {
+    from {
+        
+        transform: rotateY(90deg);
+        
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+@keyframes card_up {
+    from {
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
