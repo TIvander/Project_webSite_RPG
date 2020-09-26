@@ -1,0 +1,29 @@
+{
+  "classes": [
+    {
+      "avatar_url": "va",
+      "name": "v",
+      "spec": "v",
+      "power_bar": "mana",
+      "armor": "v",
+      "release": "2020-09-23",
+      "created_at": 1601119727376
+    },
+    {
+      "avatar_url": "asdsd",
+      "name": "vander oliveira",
+      "spec": "asdasdasdasaasdasd",
+      "power_bar": "mana",
+      "armor": "as",
+      "release": 1602201600000
+    },
+    {
+      "avatar_url": "asdsd",
+      "name": "asdasdas",
+      "spec": "sdadasdasdasda",
+      "power_bar": "mana",
+      "armor": "asdasd",
+      "release": "2020-09-25"
+    }
+  ]
+}

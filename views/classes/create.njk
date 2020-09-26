@@ -1,0 +1,77 @@
+{%extends "layout.njk" %}
+
+{% block content %}
+<form class="card" method="POST" action="/classes">
+    <section class="avatar" ></section>
+    <section class="details">
+        <h3>Nova Classe</h3>
+         <div class="item">
+                <div><h4>Avatar URL</h4></div>
+                    <div>
+                        <input
+                            type="text"
+                            name="avatar_url"
+                            placeholder="http://"
+                        >
+                    </div>
+            </div>
+
+            <div class="item">
+                <div><h4>Nome da Classe</h4></div>
+                    <div>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Digite um nome..."
+                        >
+                    </div>
+            </div>
+
+            <div class="item">
+                <div><h4>Spec Disponível</h4></div>
+                <div>
+                    <input 
+                        type="text"
+                        name="spec"
+                        placeholder="Digite as specs..."
+                        >
+                </div>
+            </div>
+
+            <div class="item">
+                <div><h4>Recursos</h4></div>
+                    <div>
+                        <span class="style_bar"><input  type="radio" name="power_bar" value="mana" checked>mana</span>
+                        <span class="style_bar"><input  type="radio" name="power_bar" value="rage">raiva</span>
+                        <span class="style_bar"><input  type="radio" name="power_bar" value="concentration">concentração</span>
+                    </div>               
+            </div>
+            <div class="item">
+                <div><h4>Tipos de Armaduras</h4></div>
+                    <div>
+                        <span>
+                              <input
+                                    type="text"
+                                    name="armor"
+                                    placeholder="Armaduras equipáveis..."
+                                >
+                        </span>
+                    </div>               
+            </div>
+            <div class="item">
+                <div><h4>Data de Lançamento</h4></div>
+                    <div>                        
+                        <span>
+                              <input
+                                    type="date"
+                                    name="release"
+                                >
+                        </span>
+                    </div>               
+            </div>
+        <button type="submit">Salvar</button>
+    </section>
+</form>
+
+
+{% endblock content %}

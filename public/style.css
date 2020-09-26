@@ -162,7 +162,7 @@ h4 {
     padding: 2px 5px;
     background-color: rgb(37, 141, 37);
     border-radius: 25px;
-    color: wheat;
+    color: white;
     display: inline-block;
     font-size: 12px; 
     text-transform: uppercase; 
@@ -173,11 +173,31 @@ h4 {
     background-color: rgb(226, 35, 10);
     border-radius: 25px;
     display: inline-block;
-    color: wheat;
+    color:white;
     font-size: 12px;  
     text-transform: uppercase; 
     font-weight: bold;
 } 
+
+.item .style_bar{
+    line-height: 20px;
+    padding: 0px 5px;
+    background-color:  rgb(10, 129, 226);
+    border-radius: 25px;
+    display: inline-block;
+    color: white; 
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.item .style_bar:nth-child(2) {
+    background-color:  rgb(226, 35, 10);
+    margin: 0 5px;
+}
+.item .style_bar:nth-child(3) {
+    background-color: rgb(38, 173, 121);;
+}
 @keyframes pop_info {
     from {
         transform: translateX(20px);
@@ -206,4 +226,32 @@ h4 {
         opacity: 1;
     }
 }
-
+/*=== FORM ===*/
+input {
+    width: 100%;
+    outline: none;
+    color: #555;
+    font-weight: normal;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 4px;
+}
+input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
+}
+button[type="submit"] {
+    box-sizing: border-box;
+    padding: 8px 32px;
+    background-color: rgb(145, 50, 223);
+    color: white;
+    border-radius: 4px;
+    width: 94%;
+    font-size: 16px;
+    margin-top: 26px;
+    float: right;
+}
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;
+}
